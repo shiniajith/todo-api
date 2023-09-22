@@ -11,8 +11,6 @@ import { CustomErrorHandler } from "./middlewares/CustomErrorHandler";
 const app = express();
 const port = parseInt(config.port);
 
-app.use(express.static("public"));
-
 app.use(express.json());
 
 useContainer(Container);

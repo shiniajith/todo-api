@@ -14,7 +14,6 @@ const routing_controllers_1 = require("routing-controllers");
 const CustomErrorHandler_1 = require("./middlewares/CustomErrorHandler");
 const app = (0, express_1.default)();
 const port = parseInt(config_1.default.port);
-app.use(express_1.default.static("public"));
 app.use(express_1.default.json());
 (0, routing_controllers_1.useContainer)(typedi_1.Container);
 (0, routing_controllers_1.useExpressServer)(app, {
